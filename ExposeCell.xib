@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ExposeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="审核中产品.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eyx-oR-JYM" userLabel="image_View">
+                        <rect key="frame" x="15" y="12" width="51" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="LYL-ob-PHn"/>
+                            <constraint firstAttribute="width" secondItem="Eyx-oR-JYM" secondAttribute="height" multiplier="1:1" id="khf-zM-qhQ"/>
+                            <constraint firstAttribute="width" constant="51" id="mvB-H2-uEk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000001期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6a-bD-ZW7" userLabel="titme">
+                        <rect key="frame" x="74" y="13" width="160" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未通过理由：发出的图片与物品不符" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CA-Zg-KuV" userLabel="desc">
+                        <rect key="frame" x="74" y="71" width="238" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.3337834013" blue="0.22691956420000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核中" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ba-3A-iq9" userLabel="flag">
+                        <rect key="frame" x="263" y="13" width="49" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="I66-Az-yz2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="哈哈哈！我终于中了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaG-oc-xdH" userLabel="title">
+                        <rect key="frame" x="74" y="41" width="238" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5ba-3A-iq9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3QX-Cc-AnJ"/>
+                    <constraint firstItem="Eyx-oR-JYM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="5Ha-MW-u5r"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Eyx-oR-JYM" secondAttribute="bottom" constant="14" id="7sB-AE-wrt"/>
+                    <constraint firstItem="5ba-3A-iq9" firstAttribute="leading" secondItem="x6a-bD-ZW7" secondAttribute="trailing" constant="29" id="BJk-cm-u0P"/>
+                    <constraint firstItem="5ba-3A-iq9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="K4R-vO-w9s"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0CA-Zg-KuV" secondAttribute="bottom" constant="-8" id="Kza-yU-ZCK"/>
+                    <constraint firstItem="IaG-oc-xdH" firstAttribute="top" secondItem="5ba-3A-iq9" secondAttribute="bottom" constant="8" id="LYY-jS-x5Y"/>
+                    <constraint firstItem="Eyx-oR-JYM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="X1k-an-TaV"/>
+                    <constraint firstItem="0CA-Zg-KuV" firstAttribute="leading" secondItem="x6a-bD-ZW7" secondAttribute="leading" id="Xgn-tZ-Cbu"/>
+                    <constraint firstItem="IaG-oc-xdH" firstAttribute="leading" secondItem="x6a-bD-ZW7" secondAttribute="leading" id="aNe-jc-wcQ"/>
+                    <constraint firstItem="IaG-oc-xdH" firstAttribute="leading" secondItem="Eyx-oR-JYM" secondAttribute="trailing" constant="8" id="dZT-Xb-HTx"/>
+                    <constraint firstItem="IaG-oc-xdH" firstAttribute="top" secondItem="x6a-bD-ZW7" secondAttribute="bottom" constant="8" id="fTa-cd-mLx"/>
+                    <constraint firstItem="0CA-Zg-KuV" firstAttribute="trailing" secondItem="IaG-oc-xdH" secondAttribute="trailing" id="iCJ-Tc-7I6"/>
+                    <constraint firstItem="x6a-bD-ZW7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="iIT-xe-Fnn"/>
+                    <constraint firstItem="0CA-Zg-KuV" firstAttribute="top" secondItem="IaG-oc-xdH" secondAttribute="bottom" constant="8" id="kGr-ik-stf"/>
+                    <constraint firstItem="5ba-3A-iq9" firstAttribute="trailing" secondItem="IaG-oc-xdH" secondAttribute="trailing" id="ztb-6z-wiL"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7sB-AE-wrt"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="466" y="461"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="审核中产品.png" width="51" height="51"/>
+    </resources>
+</document>

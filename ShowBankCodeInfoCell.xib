@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShowBankCodeInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="招行.png" translatesAutoresizingMaskIntoConstraints="NO" id="grM-iA-oky" userLabel="bgView">
+                        <rect key="frame" x="8" y="8" width="304" height="83"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信用卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlN-yJ-toV" userLabel="descLabel">
+                        <rect key="frame" x="83" y="41" width="132" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** **** **** 9876" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqL-Wh-oc0">
+                        <rect key="frame" x="109" y="67" width="185" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="185" id="3Sv-RQ-WcV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发发银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i29-nG-5km" userLabel="titleLabel">
+                        <rect key="frame" x="83" y="18" width="132" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="grM-iA-oky" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="5gF-zT-4fF"/>
+                    <constraint firstItem="grM-iA-oky" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="8yq-oe-zUf"/>
+                    <constraint firstItem="ZlN-yJ-toV" firstAttribute="centerY" secondItem="grM-iA-oky" secondAttribute="centerY" id="9ja-6A-I4f"/>
+                    <constraint firstItem="grM-iA-oky" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="CmU-Dh-VkV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kqL-Wh-oc0" secondAttribute="bottom" constant="7" id="Ecg-De-z72"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i29-nG-5km" secondAttribute="trailing" constant="97" id="QTe-ne-XN4"/>
+                    <constraint firstItem="grM-iA-oky" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W4j-Ya-DFp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kqL-Wh-oc0" secondAttribute="trailing" constant="18" id="bWd-VC-Rno"/>
+                    <constraint firstItem="kqL-Wh-oc0" firstAttribute="top" secondItem="ZlN-yJ-toV" secondAttribute="bottom" constant="8" symbolic="YES" id="dT3-Tc-A3Z"/>
+                    <constraint firstItem="ZlN-yJ-toV" firstAttribute="top" secondItem="i29-nG-5km" secondAttribute="bottom" constant="2" id="jdl-jO-Ie5"/>
+                    <constraint firstItem="ZlN-yJ-toV" firstAttribute="trailing" secondItem="i29-nG-5km" secondAttribute="trailing" id="rXE-30-mlx"/>
+                    <constraint firstItem="i29-nG-5km" firstAttribute="leading" secondItem="ZlN-yJ-toV" secondAttribute="leading" id="szZ-IQ-ybP"/>
+                    <constraint firstItem="i29-nG-5km" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="75" id="yqV-cz-NgU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="492" y="481"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="招行.png" width="304" height="100"/>
+    </resources>
+</document>

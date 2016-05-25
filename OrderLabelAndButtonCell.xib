@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrderLabelAndButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-AW-oGu" userLabel="deletBtn">
+                        <rect key="frame" x="268" y="6" width="30" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="ciw-Q0-j0V"/>
+                            <constraint firstAttribute="width" constant="30" id="ypW-PQ-RfU"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="删除.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动达成,成交价￥17.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE0-zD-7FK" userLabel="titleLabel">
+                        <rect key="frame" x="18" y="11" width="145" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="163" id="c0b-N4-UBl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="c0b-N4-UBl"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="hE0-zD-7FK" secondAttribute="bottom" constant="3" id="BBZ-az-J8i"/>
+                    <constraint firstItem="hE0-zD-7FK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Bu5-4w-2Qh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CIl-AW-oGu" secondAttribute="bottom" constant="-3" id="RO5-Wg-QeW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CIl-AW-oGu" secondAttribute="trailing" constant="14" id="hfN-sj-LcO"/>
+                    <constraint firstItem="CIl-AW-oGu" firstAttribute="leading" secondItem="hE0-zD-7FK" secondAttribute="trailing" constant="105" id="jcM-Za-QoW"/>
+                    <constraint firstItem="hE0-zD-7FK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="qhk-ar-lPt"/>
+                    <constraint firstItem="CIl-AW-oGu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="yxy-Up-q8D"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="删除.png" width="20" height="20"/>
+    </resources>
+</document>

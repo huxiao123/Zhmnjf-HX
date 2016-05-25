@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FriendDetailFlagCellId" id="KGk-i7-Jjw" customClass="FriendDetailFlagCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iphone6s plus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUR-au-mN3" userLabel="label1">
+                        <rect key="frame" x="15" y="8" width="155" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幸运抢购凭证：0000001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-wB-mYt" userLabel="label2">
+                        <rect key="frame" x="15" y="31" width="297" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="抢购份数：1000000份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-iA-Jeq" userLabel="label3">
+                        <rect key="frame" x="15" y="49" width="297" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抢购时间：2015-10-20 10：53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSv-eX-Jyl" userLabel="label4">
+                        <rect key="frame" x="15" y="70" width="297" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="期号：000001" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2f-1l-N5C" userLabel="label5">
+                        <rect key="frame" x="171" y="8" width="141" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="141" id="eLO-9H-eTd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U2f-1l-N5C" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="30G-jz-cO8"/>
+                    <constraint firstItem="U2f-1l-N5C" firstAttribute="top" secondItem="BUR-au-mN3" secondAttribute="top" id="3Rq-g7-F3V"/>
+                    <constraint firstItem="U2f-1l-N5C" firstAttribute="leading" secondItem="BUR-au-mN3" secondAttribute="trailing" constant="1" id="6Zb-zf-IJo"/>
+                    <constraint firstItem="BUR-au-mN3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9xE-Xl-JcT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aSv-eX-Jyl" secondAttribute="bottom" constant="-8" id="DiF-Jy-gHB"/>
+                    <constraint firstItem="k5e-iA-Jeq" firstAttribute="trailing" secondItem="qbP-wB-mYt" secondAttribute="trailing" id="GOT-7I-mhm"/>
+                    <constraint firstItem="k5e-iA-Jeq" firstAttribute="top" secondItem="qbP-wB-mYt" secondAttribute="bottom" constant="1" id="Y0d-8d-Gzu"/>
+                    <constraint firstItem="qbP-wB-mYt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="adt-Cs-Zgp"/>
+                    <constraint firstItem="k5e-iA-Jeq" firstAttribute="leading" secondItem="qbP-wB-mYt" secondAttribute="leading" id="d5G-LQ-0E2"/>
+                    <constraint firstItem="qbP-wB-mYt" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ikJ-Yt-kzU"/>
+                    <constraint firstItem="aSv-eX-Jyl" firstAttribute="leading" secondItem="qbP-wB-mYt" secondAttribute="leading" id="ljh-m7-e6w"/>
+                    <constraint firstItem="BUR-au-mN3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="m3w-ps-pZX"/>
+                    <constraint firstItem="aSv-eX-Jyl" firstAttribute="trailing" secondItem="qbP-wB-mYt" secondAttribute="trailing" id="mbR-yE-SpN"/>
+                    <constraint firstItem="qbP-wB-mYt" firstAttribute="top" secondItem="BUR-au-mN3" secondAttribute="bottom" constant="3" id="vxA-Az-koP"/>
+                    <constraint firstItem="U2f-1l-N5C" firstAttribute="bottom" secondItem="BUR-au-mN3" secondAttribute="bottom" id="xKi-pF-Yl8"/>
+                    <constraint firstItem="aSv-eX-Jyl" firstAttribute="top" secondItem="k5e-iA-Jeq" secondAttribute="bottom" constant="3" id="yDV-fU-nG8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authoLabel" destination="qbP-wB-mYt" id="GZ0-dn-mbc"/>
+                <outlet property="numberLabel" destination="k5e-iA-Jeq" id="f7q-1m-J4D"/>
+                <outlet property="timeLabel" destination="aSv-eX-Jyl" id="G6S-Lf-Pvu"/>
+                <outlet property="titleLabel" destination="BUR-au-mN3" id="WTS-kE-tjj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

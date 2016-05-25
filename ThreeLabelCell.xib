@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ThreeLabelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="数值X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-um-UAv">
+                        <rect key="frame" x="15" y="8" width="297" height="13"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=2454555" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc5-PI-B50">
+                        <rect key="frame" x="15" y="50" width="297" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=该商品购买完成前全站最后50个抢购时间求和" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQD-s9-4MO">
+                        <rect key="frame" x="15" y="29" width="297" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wc5-PI-B50" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="9ol-Gm-VRA"/>
+                    <constraint firstItem="Wc5-PI-B50" firstAttribute="trailing" secondItem="mTA-um-UAv" secondAttribute="trailing" id="BoZ-b7-t2W"/>
+                    <constraint firstItem="IQD-s9-4MO" firstAttribute="trailing" secondItem="mTA-um-UAv" secondAttribute="trailing" id="D9K-EU-ETt"/>
+                    <constraint firstItem="Wc5-PI-B50" firstAttribute="top" secondItem="IQD-s9-4MO" secondAttribute="bottom" constant="5" id="I9w-zK-Rdn"/>
+                    <constraint firstItem="IQD-s9-4MO" firstAttribute="top" secondItem="mTA-um-UAv" secondAttribute="bottom" constant="8" id="TGc-GT-Pdg"/>
+                    <constraint firstItem="IQD-s9-4MO" firstAttribute="leading" secondItem="mTA-um-UAv" secondAttribute="leading" id="cuW-rd-2cm"/>
+                    <constraint firstItem="mTA-um-UAv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="fQ6-mP-V5w"/>
+                    <constraint firstItem="Wc5-PI-B50" firstAttribute="leading" secondItem="mTA-um-UAv" secondAttribute="leading" id="iat-m9-lJ0"/>
+                    <constraint firstItem="mTA-um-UAv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="wtm-T3-5Ed"/>
+                    <constraint firstItem="mTA-um-UAv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ym5-kX-nPU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="XLabel" destination="mTA-um-UAv" id="U04-Ty-FD1"/>
+                <outlet property="descLabel" destination="IQD-s9-4MO" id="Pdk-l5-zIB"/>
+                <outlet property="threeLabel" destination="Wc5-PI-B50" id="zjH-8R-9yo"/>
+            </connections>
+            <point key="canvasLocation" x="473" y="461.5"/>
+        </tableViewCell>
+    </objects>
+</document>

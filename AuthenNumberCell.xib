@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="AuthenNumberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000458" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPe-Ye-ktc" userLabel="nubmerLabel">
+                        <rect key="frame" x="8" y="8" width="304" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" red="1" green="0.1647983251" blue="0.10414189040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="揭晓时间：2015-10-01 20:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJL-5Q-v0C" userLabel="timeLabel">
+                        <rect key="frame" x="8" y="57" width="304" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="本期幸运抢购凭证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oj-I3-qim" userLabel="descLabel">
+                        <rect key="frame" x="8" y="38" width="304" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YJL-5Q-v0C" firstAttribute="trailing" secondItem="zPe-Ye-ktc" secondAttribute="trailing" id="03e-ho-oFw"/>
+                    <constraint firstItem="9Oj-I3-qim" firstAttribute="top" secondItem="zPe-Ye-ktc" secondAttribute="bottom" constant="1" id="0Va-VJ-6k4"/>
+                    <constraint firstItem="zPe-Ye-ktc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FEg-aF-UCx"/>
+                    <constraint firstItem="YJL-5Q-v0C" firstAttribute="top" secondItem="9Oj-I3-qim" secondAttribute="bottom" constant="2" id="NYz-S4-6Wm"/>
+                    <constraint firstItem="YJL-5Q-v0C" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Rqc-vK-O3O"/>
+                    <constraint firstItem="9Oj-I3-qim" firstAttribute="trailing" secondItem="zPe-Ye-ktc" secondAttribute="trailing" id="Wph-95-gRm"/>
+                    <constraint firstItem="9Oj-I3-qim" firstAttribute="leading" secondItem="zPe-Ye-ktc" secondAttribute="leading" id="efg-Sy-YpI"/>
+                    <constraint firstItem="YJL-5Q-v0C" firstAttribute="leading" secondItem="zPe-Ye-ktc" secondAttribute="leading" id="pdr-pT-zX8"/>
+                    <constraint firstItem="zPe-Ye-ktc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="sLD-l0-jI8"/>
+                    <constraint firstItem="zPe-Ye-ktc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ypw-qk-r5D"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

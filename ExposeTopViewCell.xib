@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ExposeTopViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="晒单背景.png" translatesAutoresizingMaskIntoConstraints="NO" id="QvK-mE-fDx" userLabel="imageView1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我要晒单.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-8l-Xrb" userLabel="imageView2">
+                        <rect key="frame" x="124" y="73" width="73" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="4Zs-HS-pvh"/>
+                            <constraint firstAttribute="height" constant="73" id="CP5-rQ-Oco"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="成为幸运抢购者后才可以晒单,当前您还可以晒单0次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uko-FH-Zj1" userLabel="label1">
+                        <rect key="frame" x="8" y="154" width="304" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晒单审核通过可以获取10元红包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gg-PN-i6u" userLabel="label2">
+                        <rect key="frame" x="8" y="172" width="304" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFb-h0-38k" userLabel="backBtn">
+                        <rect key="frame" x="8" y="23" width="56" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="W9i-V7-d3s"/>
+                            <constraint firstAttribute="width" constant="56" id="shw-sf-TdI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="返回" image="返回.png"/>
+                        <connections>
+                            <action selector="backBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xlj-Mu-UBI"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QvK-mE-fDx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="2m4-l8-mDw"/>
+                    <constraint firstItem="QvK-mE-fDx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="2y8-Vh-m70"/>
+                    <constraint firstItem="uko-FH-Zj1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5UL-Qg-8YH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QvK-mE-fDx" secondAttribute="trailing" constant="-8" id="DsS-cs-kSf"/>
+                    <constraint firstItem="uko-FH-Zj1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="EqQ-jU-hqc"/>
+                    <constraint firstItem="7gg-PN-i6u" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="JVg-8J-X3x"/>
+                    <constraint firstItem="uko-FH-Zj1" firstAttribute="top" secondItem="QvK-mE-fDx" secondAttribute="bottom" constant="50" id="NGc-Iy-C8R"/>
+                    <constraint firstItem="lFb-h0-38k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W6n-UT-J1a"/>
+                    <constraint firstItem="Tfk-8l-Xrb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XN5-5X-iiy"/>
+                    <constraint firstItem="7gg-PN-i6u" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="mKm-M0-mSq"/>
+                    <constraint firstItem="7gg-PN-i6u" firstAttribute="top" secondItem="uko-FH-Zj1" secondAttribute="bottom" constant="3" id="n7s-3g-yaq"/>
+                    <constraint firstItem="Tfk-8l-Xrb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="65" id="r04-IS-MFq"/>
+                    <constraint firstItem="lFb-h0-38k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="rlM-qZ-Fsn"/>
+                    <constraint firstItem="7gg-PN-i6u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="u1d-N3-RfH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="ShareExposeImage" destination="Tfk-8l-Xrb" id="zy5-qy-SKK"/>
+                <outlet property="backBtn" destination="lFb-h0-38k" id="rJ9-Tr-ODx"/>
+            </connections>
+            <point key="canvasLocation" x="466" y="461.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="我要晒单.png" width="73" height="73"/>
+        <image name="晒单背景.png" width="320" height="104"/>
+        <image name="返回.png" width="10" height="19"/>
+    </resources>
+</document>

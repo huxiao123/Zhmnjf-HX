@@ -1,0 +1,34 @@
+//
+//  PrefixHeader-Zhmnjf.pch
+//  Zhmnjf-HX
+//
+//  Created by apple on 16/3/21.
+//  Copyright © 2016年 XY. All rights reserved.
+//
+
+#ifndef PrefixHeader_Zhmnjf_pch
+#define PrefixHeader_Zhmnjf_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "common.h"
+#import "XRCarouselView.h"
+#import "EnterTextFieldCell.h"
+#import "MyUnitility.h"
+#import "UIImageView+WebCache.h"
+#import "XHHttpRequest.h"
+#import <KVNProgress/KVNProgress.h>
+#import "UIViewExt.h"
+#import <FMDB/FMDatabase.h>
+#import "LCCoolHUD.h"
+#import <MJRefresh.h>
+#import "RegularExpression.h"
+#import "Masonry.h"
+#import "iCarousel.h"
+
+#endif /* PrefixHeader_Zhmnjf_pch */
+
